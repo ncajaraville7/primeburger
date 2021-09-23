@@ -1,0 +1,139 @@
+.navbar {
+    transition: .3s;
+    background-color: $transparente;
+}
+
+.background {
+    background-color: $negro;
+    padding: 1rem;
+}
+
+.logo {
+    color: $blanco;
+    transition: .2s;
+    font-weight: 800 !important;
+
+    &:hover {
+        color: $verde;
+    }
+}
+
+.hamburger-menu {
+    flex-flow: column wrap;
+    width: 4rem;
+    cursor: pointer;
+
+    & .bar {
+        height: 2px;
+        background: white;
+        border-radius: 5px;
+        margin: 6px 0px;
+    }
+}
+
+.nav-item a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-right: 35px;
+
+    &:hover {
+        color: $verde;
+    }
+}
+
+.activo {
+    color: $verde !important;
+}
+
+// ENCABEZADO
+
+.encabezado {
+    background:linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.5)100%),url(../imagenes/front-view-burgers-stand-min-min.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+
+    &__texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        color: $blanco;
+    
+        @include telefono {
+            & h1 {
+                font-size: 7rem;
+            }
+        }
+    
+        & p {
+            text-align: center;
+        }
+    }  
+}
+
+// MENÚ
+
+.encabezado-menu {
+    @extend .encabezado;
+    background:linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.5)100%),url(../imagenes/glass-bottles-beer-with-glass-ice-dark-background-min.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    &__texto {
+        @extend .encabezado__texto;
+    }
+}
+
+// GALERIA
+
+.encabezado-galeria {
+    @extend .encabezado;
+    background:linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.5)100%),url(../imagenes/abstract-blur-food-truck-min.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    &__texto {
+        @extend .encabezado__texto;
+    }
+}
+
+// ACERCA
+
+.encabezado-acerca {
+    @extend .encabezado;
+    background:linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.5)100%),url(../imagenes/closeup-shot-delicious-burger-with-beef-yellow-cheese-bacon-min.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    &__texto {
+        @extend .encabezado__texto;
+
+        @include telefono {
+            & h1{
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+// CONTACTO
+
+.encabezado-contacto {
+    @extend .encabezado;
+    background:linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.5)100%),url(../imagenes/004p.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    &__texto {
+        @extend .encabezado__texto;
+
+        @include telefono {
+            & h1 {
+                font-size: 5rem;
+            }
+        }
+    }
+}

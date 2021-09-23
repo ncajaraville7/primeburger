@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prime Burger es un hamburgueseria de propiedad y gestión familiar que ofrece ademas de hamburguesas, distintos tipos de comida rápida">
+    <meta name="keywords" content="prime burger, burger prime, hamburgueseria, hamburgueseria en villa madero, hamburgueseria en capital, hamburgueseria en caballito, cheddar, hamburguesas">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="src/css/estilos.css">
+
+    <link rel="shortcut icon" href="src/imagenes/logo1-min-min.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <title>PRIME BURGER</title>
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand fs-2 fw-bold logo">
+                <img src="src/imagenes/logo1-min-min.png" alt="Logo de la marca" height="50">
+                PRIME BURGER.</a>
+                
+                <div class="hamburger-menu navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                
+                <div class="collapse navbar-collapse justify-content-lg-end " id="navbarSupportedContent">
+                    
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link activo" aria-current="page">Inicio</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link" aria-current="page">Menú</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="galeria.html" class="nav-link" aria-current="page">Galería</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="acerca.html" class="nav-link" aria-current="page">Acerca</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link" aria-current="page">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="encabezado">
+            <div class="encabezado__texto">
+                <h1>PRIME BURGER</h1>
+                <div class="separador"></div>
+                <p>Desde el 2009 una tradición familiar<br>Del barrio de boedo al mundo.</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="reserva container">
+            <div class="reserva__texto">
+                <h2>¡Reserva tu lugar!</h2>
+                <p>Reserva tu mesa, no te quedes sin la tuya. Recorda que se debe abonar un 25% de seña y en caso de querer cancelar la mesa tiene que ser al menos con 24 horas de anticipación.</p>
+            </div>
+
+            <form action="" class="reserva__formulario">
+                <div class="reserva__campos">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Indique su nombre">
+                </div>
+
+                <div class="reserva__campos">
+                    <label for="numero">Telefono</label>
+                    <input type="number" name="numeri" id="numero" placeholder="Indique su numero telefonico">
+                </div>
+
+                <div class="reserva__campos">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+
+                <div class="reserva__boton">
+                    <input type="submit" value="Consultar Disponibilidad">
+                </div>
+            </form>
+        </section>
+
+        <section class="opciones">
+            <div class="opciones__contenido">
+                <div class="opciones__imagen">
+                    <img src="src/imagenes/galeria2-min-min.jpg" alt="Imagen de hamburguesa con papas">
+                </div>
+                <div class="opciones__texto">
+                    <i class="fas fa-store"></i>
+                    <h3>FRANQUICIAS</h3>
+                    <a href="acerca.html#local" class="opciones__btn">VER</a>
+                </div>
+            </div>
+
+            <div class="opciones__contenido">
+                <div class="opciones__imagen">
+                    <img src="src/imagenes/fresh-light-beer-mug-min-min.jpg" alt="Imagen de hamburguesa con papas" >
+                </div>
+                <div class="opciones__texto">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>EVENTOS</h3>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn opciones__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        VER MAS
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">EVENTOS</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-center">NO HAY EVENTOS DISPONIBLES POR EL MOMENTO...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="opciones__contenido">
+                <div class="opciones__imagen">
+                    <img src="src/imagenes/closeup-shot-delicious-burger-with-beef-yellow-cheese-bacon-min.jpg" alt="Imagen de hamburguesa con papas">
+                </div>
+                <div class="opciones__texto">
+                    <i class="fas fa-motorcycle"></i>
+                    <h3>DELIVERY</h3>
+                    <a href="menu.html#menu" class="opciones__btn">PEDIR</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="suscribite">
+            <div class="suscribite__textos">
+                <h2>Suscribite y disfruta de nuestros beneficios</h2>
+                <p>Suscribite a nuestro newsletter y recibí las últimas novedades, promociones y descuentos.</p>
+            </div>
+
+            <div class="suscribite__campo">
+                <input type="text" name="email" id="email" placeholder="email@ejemplo.com">
+                <input type="submit" value="Suscribirse">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+            <div class="footer__logo">
+                <a href="index.html"><img src="src/imagenes/logo1-min-min.png" alt="Logo de la marca">PRIMER BURGER.</a>
+            </div>
+
+            <div class="footer__menu">
+                <a href="index.html">Inicio</a>
+                <div class="footer__barra"></div>
+                <a href="menu.html">Menú</a>
+                <div class="footer__barra"></div>
+                <a href="galeria.html">Galería</a>
+                <div class="footer__barra"></div>
+                <a href="acerca.html">Acerca</a>
+                <div class="footer__barra"></div>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="footer__redes">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+    
+            <div class="footer__textos">
+                <p>Pagina Web desarrollada y diseñada por Nicolás Cajaraville</p>
+            </div>
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>

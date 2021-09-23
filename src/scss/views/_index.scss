@@ -1,0 +1,211 @@
+// RESERVA
+
+.reserva {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 4rem 0;
+
+    @include tablet {
+        & {
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            padding: 2rem;
+        }
+    }
+
+    &__texto {
+        width: 50%;
+
+        @include telefono {
+            width: 100%;
+        }
+
+        & h2 {
+            text-align: start;
+
+            @include telefono {
+                & {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &__formulario {
+        width: 50%;
+        background-color: $blanco;
+
+        @include telefono {
+            width: 100%;
+        }
+    }
+
+    &__campos {
+        margin: 2rem;
+
+        & label {
+            font-size: 1.5rem;
+            padding: 0.5rem 0;
+        }
+    
+        & input {
+            height: 3rem;
+            width: 100%;
+            transition: .2s;
+
+            &::placeholder {
+                padding: 1rem;
+            }
+
+            &:focus {
+                height: 3.5rem;
+            }
+        }
+    }
+
+    &__boton {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 2rem 0;
+
+        & input {
+            color: $blanco;
+            font-size: 1.2rem;
+            background-color: $negro;
+            padding: 1rem;
+            transition: .2s;
+
+            &:hover {
+                color: $verde;
+                padding: 1rem 1.5rem;
+            }
+        }
+    }    
+}
+
+//------------------------------------------------------
+//------------------------------------------------------
+//------------------------------------------------------
+
+//OPCIONES
+
+.opciones {
+    display: flex;
+
+    @include tablet {
+        & {
+            flex-direction: column;
+        }
+    }
+
+    &__contenido {
+        position: relative;
+        width: 33.33%;
+
+        @include tablet {
+            & {
+                width: 100% !important;
+            }
+        }
+    }
+
+    &__imagen img {
+        width: 100%;
+        height: 40rem;
+    }
+
+    &__texto {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $negroTransparente;
+
+        & i,
+        & h3 {
+            color: $blanco;
+            font-size: 3vw;
+            margin: 0;
+
+            @include tablet {
+                & {
+                    font-size: 10vw;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        font-size: 2rem;
+        color: $blanco;
+        border: 2px solid $blanco;
+        padding: 1rem;
+        margin-top: 1.5rem;
+        width: 15rem;
+        text-align: center;
+        transition: .2s;
+    
+        &:hover {
+            width: 18rem;
+            color: $verde;
+        }
+    }
+}
+
+//------------------------------------------------------
+//------------------------------------------------------
+//------------------------------------------------------
+
+// SUSCRIBITE
+
+.suscribite {
+    padding: 6rem 4rem;
+
+    &__textos p {
+        text-align: center;
+    }
+
+    &__campo {
+        display: flex;
+        justify-content: center;
+
+        @include tablet {
+            & {
+                flex-direction: column;
+            }
+        }
+
+        & input:first-of-type {
+            height: 3.5rem;
+            width: 35%;
+            padding: 1rem;
+
+            @include tablet {
+                & {
+                    width: 100%;
+                }
+            }
+        }
+
+        & input:last-of-type {
+            height: 3.5rem;
+            padding: 1rem;
+            background-color: $negro;
+            color: $blanco;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            transition: .2s;
+
+            &:hover {
+                color: $verde;
+                letter-spacing: .2rem;
+            }
+        }
+    }
+}

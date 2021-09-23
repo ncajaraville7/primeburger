@@ -1,0 +1,93 @@
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $negro;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+
+        & img {
+            height: 5rem;   
+        }
+
+        & a {
+            font-size: 2em;
+            font-weight: 700;
+            color: $blanco;
+            transition: .2s;
+
+            &:hover {
+                color: $verde;
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+        @include tablet {
+            & {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 0;
+            }
+        }
+
+        & a {
+            text-transform: uppercase;
+            color: $blanco;
+            font-size: 1.5rem;
+            transition: .2s;
+
+            @include tablet {
+                & {
+                    margin-top: 1rem;
+                }
+            }
+
+            &:hover {
+                color: $verde;
+            }
+        }
+    }
+
+    &__barra {
+        border-right: 2px solid $blanco;
+        margin: 0 30px
+    }
+
+    &__redes {
+        text-align: center;
+        margin: 2rem 0;
+
+        & i {
+            font-size: 2.5rem;
+            color: $blanco;
+            margin-left: 2rem;
+            transition: .2s;
+            cursor: pointer;
+
+            &:first-of-type:hover {
+                color: $facebook;
+            }
+
+            &:nth-child(2):hover {
+                color: $twitter;
+            }
+
+            &:last-of-type:hover {
+                color: $youtube;
+            }
+        }
+    }
+
+    &__textos p {
+        color: $blanco;
+        text-align: center;
+        font-size: 1rem;
+    }
+}

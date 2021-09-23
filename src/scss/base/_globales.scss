@@ -1,0 +1,51 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $fuentePrincipal;
+    background-color: $blancoDos;
+}
+
+h1 {
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+// .contenedor {
+//     width: 90%;
+//     margin: 0 auto;
+//     max-width: 1200px;
+// }
+
+.separador {
+    border-top: 3px solid $blanco;
+    width: 6rem;
+    margin: 0rem 0 1.2rem 0;
+}

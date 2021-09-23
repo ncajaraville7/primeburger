@@ -1,0 +1,46 @@
+.menu {
+    margin-top: 2rem;
+
+    & h2 {
+        font-weight: 900;
+
+        @include telefono {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__producto {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        gap: 4rem;
+
+        @include telefono {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+
+    &__imagen {
+        height: 20rem;
+        width: 25rem;
+
+        & img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__descripcion {
+        margin-top: 2rem;
+
+        & h3 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        & span {
+            font-weight: 900;
+        }
+    }
+}

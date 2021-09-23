@@ -1,0 +1,59 @@
+.contacto {
+    padding: 4rem 0 4rem 0;
+    background-color: $blanco;
+
+    &__campos {
+        display: flex;
+        justify-content: center;
+
+        @include telefono {
+            & {
+                flex-direction: column;
+            }
+        }
+
+        & textarea {
+            width: 90%;
+
+            @include telefono {
+                & {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 100%;
+
+        & label {
+            font-size: 1.5rem;
+        }
+
+        & input {
+            padding: 1rem;
+            background-color: $blancoDos;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+        & input {
+            background-color: $negro;
+            color: $blanco;
+            padding: 1rem;
+            transition: .2s;
+
+            &:hover {
+                color: $verde;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

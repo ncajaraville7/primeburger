@@ -1,0 +1,155 @@
+.sobrenosotros {
+    padding: 4rem;
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+        @include tablet {
+            & {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    }
+
+    &__imagen {
+        max-width: 50rem;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__contenido h2 {
+        font-weight: 700;
+    }
+}
+
+.postulate {
+    height: 35rem;
+
+    &__imagen {
+        width: 100%;
+        height: 35rem;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.4);
+        }
+    }
+    &__texto {
+        position: relative;
+        top: -30rem;
+        padding-left: 5rem;
+
+        & h3 {
+            color: $blanco;
+            font-size: 5rem;
+            font-weight: 800;
+
+            @include telefono {
+                & {
+                    font-size: 4rem;
+                }
+            }
+        }
+
+        & p {
+            color: $blanco;
+            font-size: 2rem;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        top: -30rem;
+        padding-left: 5rem;
+        margin-top: 2rem;
+        cursor: pointer;
+        width: 40rem;
+
+        @include telefono {
+            & {
+                width: 80%;
+                padding-left: 0;
+                margin-top: 0;
+                margin: 0 auto;
+            }
+        }
+
+        & a {
+            color: $blanco;
+            font-size: 1.8rem;
+            border: 3px solid $blanco;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            transition: .2s;
+
+            &:hover {
+                color: $verde;
+            }
+        }
+    }
+}
+
+.local {
+    padding: 4rem 0 4rem 0;
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+
+        @include tablet {
+            & {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    }
+
+    &__texto {
+        width: 50%;
+
+        @include tablet {
+            & {
+                width: 100%;
+            }
+        }
+
+        & h2 {
+            font-weight: 700;
+        }
+    }
+    
+    &__imagen img {
+        max-width: 100%;
+        height: 40rem;
+    }
+
+    &__btn {
+        border: 3px solid $negro;
+        padding: 2rem;
+        width: 30rem;
+
+        & a {
+            display: flex;
+            justify-content: center;
+            color: $negro;
+            font-size: 1.8rem;
+            transition: .2s;
+
+            &:hover {
+                color: $verde;
+            }
+        }
+    }
+}
+
